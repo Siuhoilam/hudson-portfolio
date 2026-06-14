@@ -3,615 +3,224 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>林圳豪 LAM Chun Ho (Hudson) | Urban Planning & Policy Research</title>
-    <meta
-      name="description"
-      content="林圳豪 LAM Chun Ho (Hudson) 的城市規劃、空間分析與政策研究個人作品集，展示香港城市研究、社區更新、公共住房與跨境創科走廊規劃。"
-    >
+    <meta name="description" content="林圳豪 Hudson Lam 的城市規劃、空間分析與政策研究作品集。">
+    <meta name="theme-color" content="#0b2f2b">
+    <title>Hudson Lam | Urban Planning & Research</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首頁">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <span>林圳豪</span>
-          <small>LAM Chun Ho (Hudson)</small>
-        </span>
+        <span class="brand-mark">HL</span>
+        <span><strong>Hudson Lam</strong><small>Urban planner & researcher</small></span>
       </a>
-      <nav class="nav" aria-label="主要導覽">
-        <a href="#top" data-icon="compass">定位</a>
-        <a href="#about" data-icon="profile">關於</a>
-        <a href="#work" data-icon="grid">作品</a>
-        <a href="#updates" data-icon="pulse">動態</a>
-        <a href="#cats" data-icon="heart">貓協</a>
-        <a href="#contact" data-icon="mail">聯絡</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" aria-label="主要導覽">
+        <a href="#work">Selected work</a>
+        <a href="#profile">Profile</a>
+        <a href="#archive">Archive</a>
+        <a class="nav-cta" href="#contact">Let’s talk</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-visual" aria-hidden="true">
-          <img class="hero-slide slide-1" src="assets/hero-slides/hero-slide-1.jpg" alt="">
-          <img class="hero-slide slide-2" src="assets/hero-slides/hero-slide-2.jpg" alt="">
-          <img class="hero-slide slide-3" src="assets/hero-slides/hero-slide-3.jpg" alt="">
-          <img class="hero-slide slide-4" src="assets/hero-slides/hero-slide-4.jpg" alt="">
-          <img class="hero-slide slide-5" src="assets/hero-slides/hero-slide-5.jpg" alt="">
-          <img class="hero-slide slide-6" src="assets/hero-slides/hero-slide-6.jpg" alt="">
-        </div>
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow">Urban Planning · Spatial Analysis · Policy Research</p>
-          <h1>以研究證據連接香港與內地規劃實務</h1>
-          <p class="hero-subtitle">Urban Planning · Spatial Analysis · Policy Research</p>
+          <p class="kicker">Hong Kong · Greater Bay Area</p>
+          <h1>Planning cities with <em>evidence,</em> designing them for <em>people.</em></h1>
           <p class="hero-lede">
-            我是林圳豪 Hudson Lam，香港大學 MUP 學生及 MUD Distinction 畢業生。我的工作關注香港城市研究、社區更新、公共住房與跨境創科走廊規劃，並嘗試把政策理解、空間分析與有溫度的公共價值放進每一次規劃決策。
+            我是林圳豪 Hudson，一名結合空間分析、政策研究與社區設計的城市規劃者。
+            我的工作從北部都會區策略研究，延伸至公共住房、低排放區評估與公共空間更新。
           </p>
-          <div class="hero-actions" aria-label="主要行動">
-            <a class="button primary" href="#work">查看代表項目</a>
-            <a class="button secondary" href="assets/documents/hudson-lam-cv.pdf" download>下載 CV</a>
-            <a class="button ghost" href="#contact">聯絡我</a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work</a>
+            <a class="button button-secondary" href="assets/documents/hudson-lam-cv.pdf" download>Download CV</a>
+          </div>
+          <div class="hero-meta" aria-label="個人摘要">
+            <span>HKU MUP ’27</span>
+            <span>MUD with Distinction</span>
+            <span>Open to opportunities</span>
           </div>
         </div>
-        <div class="hero-dots" aria-label="首頁背景圖片切換">
-          <button class="hero-dot" type="button" data-slide="0" aria-label="顯示第 1 張首頁背景"></button>
-          <button class="hero-dot" type="button" data-slide="1" aria-label="顯示第 2 張首頁背景"></button>
-          <button class="hero-dot" type="button" data-slide="2" aria-label="顯示第 3 張首頁背景"></button>
-          <button class="hero-dot" type="button" data-slide="3" aria-label="顯示第 4 張首頁背景"></button>
-          <button class="hero-dot" type="button" data-slide="4" aria-label="顯示第 5 張首頁背景"></button>
-          <button class="hero-dot" type="button" data-slide="5" aria-label="顯示第 6 張首頁背景"></button>
-        </div>
+        <p class="hero-index" aria-hidden="true">22.3193° N<br>114.1694° E</p>
       </section>
 
-      <section id="positioning" class="positioning-band" aria-label="Current focus">
-        <div class="positioning-intro">
-          <p class="eyebrow"><span>當前研究</span><small>Current Focus</small></p>
-          <h2>現任本地智庫「博匯」研究北部都會區的「重構」方案，為 <a href="https://www.linkedin.com/in/hanhsiho/?originalSubdomain=tw">Dr. Han Hsi Ho (HKU)</a> 做研究助理 (RA)，兩篇 Urban Study Q1 文章進入最後審核階段。</h2>
-        </div>
-        <div class="positioning-grid">
-          <article>
-            <span>01</span>
-            <h3>深耕「北都」研究</h3>
-            <p>聚焦北部都會區的重構方案、跨境協同、產業節點與社區承載力，從政策框架、土地條件與空間網絡中提煉可落地的規劃判斷。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>多尺度設計</h3>
-            <p>從 515 公頃新城規劃到 400 平方米公共空間更新，以尺度切換處理不同層級的城市問題。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>科研與評估</h3>
-            <p>以城市空間網絡、政策影響與 Difference-in-Difference 方法，支撐更可驗證的規劃判斷。</p>
-          </article>
-        </div>
+      <section class="signal-bar" aria-label="主要成果">
+        <article><strong>515 ha</strong><span>new-town planning scale</span></article>
+        <article><strong>4 awards</strong><span>design recognition</span></article>
+        <article><strong>2 papers</strong><span>under peer review</span></article>
+        <article><strong>3 institutes</strong><span>HKIP · HKIUD · RTPI</span></article>
       </section>
 
-      <section id="about" class="section about-section">
-        <div class="section-kicker">
-          <p class="eyebrow">About</p>
-          <h2>研究、設計與實務並行</h2>
-        </div>
-        <div class="about-grid">
-          <div class="profile-card">
-            <img class="profile-photo" src="assets/profile-photo.jpg" alt="林圳豪 LAM Chun Ho (Hudson) 個人頭像">
-            <p class="profile-name">林圳豪 LAM Chun Ho (Hudson)</p>
-            <p>MUP Student (2025-2027) + MUD Graduate (2024-2025) at HKU</p>
-            <p>Hong Kong based</p>
-            <p>Seeking Urban Planner / Urban Designer / Urban Manager roles</p>
+      <section id="work" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">01 · Selected work</p>
+            <h2>Four projects, four ways of making an impact.</h2>
           </div>
-          <div class="about-copy">
-            <p>
-              我的研究方向聚焦城市空間網絡與政策影響效果，目前關注香港社區尺度消費模式轉變及其對城市生活的影響。設計方面，我具備多尺度空間設計能力，從 515 公頃的新城規劃到 400 平方米的公共空間更新，均有競賽獲獎與實作導向的作品經驗。
-            </p>
-            <p>
-              我目前是 HKIP、HKIUD、RTPI 學生會員，亦參與本地智庫、HKU 兼職研究助理工作，並擔任 MUP 班級代表。未來希望在城市規劃與城市設計領域，連結研究證據、制度理解與面向社群的空間實踐。
-            </p>
-            <ul class="award-list" aria-label="主要獎項">
-              <li><span aria-hidden="true"></span>Champion | “Let’s Go Well-being Chak On” Design Competition</li>
-              <li><span aria-hidden="true"></span>Merit | The Revamp of Sau Mau Ping Road Safety Town Design Competition</li>
-              <li><span aria-hidden="true"></span>Commendation Awards | HKIUD Urban Design Awards</li>
-              <li><span aria-hidden="true"></span>Second Prize | WUPENiCity International Competition on Urban Sustainability</li>
-            </ul>
-            <div class="experience-timeline" aria-label="工作經歷時間軸">
-              <div>
-                <time>04/2026 - Present</time>
-                <h3>Doctoral Exchange (Local Think Tank)</h3>
-                <p class="role-line">Part-time Urban Planning assistant</p>
-                <p>Assist Northern Metropolis reconstruction planning and technical drawing production.</p>
-              </div>
-              <div>
-                <time>05/2026 - Present</time>
-                <h3>The University of Hong Kong, Department of Urban Planning and Design</h3>
-                <p class="role-line">Student Research Assistant</p>
-                <p>Conducted research on Hong Kong public housing network and co-benefit of transport policies; two Urban Study Q1 papers under review (Frontiers in Built Environment / Cities).</p>
-              </div>
-              <div>
-                <time>06/2024 - 08/2025</time>
-                <h3>Architecture Commons (Band 2)</h3>
-                <p class="role-line">Architectural Design Intern</p>
-                <p>Led “Wellbeing in Chak On” community renewal plan design, collaborating with HKHA for implementation.</p>
-              </div>
-              <div>
-                <time>12/2024 - 01/2025</time>
-                <h3>China Innovation Development Research Institute</h3>
-                <p class="role-line">Urban Planning assistant</p>
-                <p>Conducted Northern Metropolis horizontal planning research, site investigations, and concept design development.</p>
-              </div>
-              <div>
-                <time>07/2024 - 08/2024</time>
-                <h3>China State Construction International Medical Industry Development Co., Ltd (Band 2)</h3>
-                <p class="role-line">Architectural Engineering assistant</p>
-                <p>Organized 4000+ design drawings for Prince of Wales Hospital Phase II and compiled Kai Tak hospital construction reports.</p>
-              </div>
-              <div>
-                <time>10/2023 - 12/2023</time>
-                <h3>Shenzhen Branch, China Academy of Urban Planning & Design</h3>
-                <p class="role-line">Urban Planning Intern</p>
-                <p>Created industrial planning maps, analyzed building environments, and produced 3D models/CAD drawings for land use planning.</p>
-              </div>
-            </div>
-          </div>
+          <p>精選項目以問題、方法、個人貢獻與成果為核心。點擊案例可查看水印作品預覽。</p>
         </div>
-      </section>
 
-      <section class="section credentials-section" aria-label="學歷與協會認可">
-        <div class="section-kicker">
-          <p class="eyebrow">Education & Membership</p>
-          <h2>學歷與協會認可</h2>
-        </div>
-        <div class="credentials-list">
-          <article class="credential-item">
-            <div class="credential-mark credential-logo">
-              <img src="assets/logos/hku-logo.svg" alt="The University of Hong Kong logo">
+        <div class="case-list">
+          <article class="case case-featured">
+            <div class="case-media">
+              <img src="assets/projects/dubai-oasis.jpg" alt="Oasis Renaissance 城市設計總圖">
+              <span>Urban design · Dubai</span>
             </div>
-            <div>
-              <h3>Master of Science in Urban Planning</h3>
-              <p>The University of Hong Kong · MUP Student</p>
-              <span>2025 - 2027 · GPA 3.45/4.3</span>
-            </div>
-          </article>
-          <article class="credential-item">
-            <div class="credential-mark credential-logo">
-              <img src="assets/logos/hku-logo.svg" alt="The University of Hong Kong logo">
-            </div>
-            <div>
-              <h3>Master of Urban Design</h3>
-              <p>The University of Hong Kong · Pass with Distinction</p>
-              <span>2024 - 2025 · GPA 3.73/4.3</span>
+            <div class="case-copy">
+              <p class="case-number">Case 01 / Regional resilience</p>
+              <h3>Oasis Renaissance</h3>
+              <p class="case-intro">將 Dubai Creek Harbor 的高密度開發，轉化為由藍綠網絡與公共生活驅動的韌性城區。</p>
+              <dl>
+                <div><dt>Challenge</dt><dd>水文壓力、熱環境與斷裂的濱水公共界面</dd></div>
+                <div><dt>Contribution</dt><dd>整合區域水系、交通組織、開放空間與街區設計語言</dd></div>
+                <div><dt>Methods</dt><dd>Urban design · Blue-green network · Phasing</dd></div>
+              </dl>
+              <button class="text-button panel-button" type="button" data-pdf="assets/projects/pdfs/dubai-oasis-panel-preview.pdf" data-title="Oasis Renaissance">View case study <span>↗</span></button>
             </div>
           </article>
-          <article class="credential-item">
-            <div class="credential-mark credential-logo">
-              <img src="assets/logos/cqu-logo.png" alt="Chongqing University logo">
+
+          <article class="case">
+            <div class="case-media">
+              <img src="assets/projects/chak-on-wellbeing.jpg" alt="Well-being Chak On 社區更新設計">
+              <span>Champion · HKHA</span>
             </div>
-            <div>
-              <h3>Bachelor of Engineering in Urban Planning</h3>
-              <p>Chongqing University · School of Architecture and Urban Planning</p>
-              <span>2019 - 2024 · GPA 3.38/4.0</span>
+            <div class="case-copy">
+              <p class="case-number">Case 02 / Community renewal</p>
+              <h3>Well-being Chak On</h3>
+              <p class="case-intro">以模組家具、活動平台與清晰導向，重新激活屋邨內低使用率的公共空間。</p>
+              <dl>
+                <div><dt>Contribution</dt><dd>主導社區更新方案設計，與香港房屋委員會協作推進落地</dd></div>
+                <div><dt>Outcome</dt><dd>Design competition champion</dd></div>
+              </dl>
+              <button class="text-button panel-button" type="button" data-pdf="assets/projects/pdfs/wellbeing-chak-on-panel-preview.pdf" data-title="Well-being Chak On">View case study <span>↗</span></button>
             </div>
           </article>
-          <article class="credential-item">
-            <div class="credential-mark credential-logo">
-              <img src="assets/logos/hkip-logo.png" alt="The Hong Kong Institute of Planners logo">
+
+          <article class="case">
+            <div class="case-media">
+              <img src="assets/projects/madrid-lez-research.jpg" alt="Madrid 低排放區研究圖表">
+              <span>Policy research · Madrid</span>
             </div>
-            <div>
-              <h3>Professional Membership Recognition</h3>
-              <p>HKIP Student Member · RTPI Student Member · HKIUD Graduate Member</p>
-              <span>Hong Kong / United Kingdom professional planning and urban design networks</span>
+            <div class="case-copy">
+              <p class="case-number">Case 03 / Policy evaluation</p>
+              <h3>Madrid LEZ Co-benefits</h3>
+              <p class="case-intro">評估低排放區對行人安全與城市活力的共同效益，讓政策影響變得可驗證。</p>
+              <dl>
+                <div><dt>Methods</dt><dd>Difference-in-Difference · Spatial analysis · Policy evaluation</dd></div>
+                <div><dt>Outcome</dt><dd>Manuscript under peer review at <em>Cities</em></dd></div>
+              </dl>
+              <a class="text-button" href="https://www.sciencedirect.com/journal/cities" target="_blank" rel="noopener">Research context <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-media">
+              <img src="assets/projects/san-tin-technopole-cover.jpg" alt="San Tin Technopole 規劃報告封面">
+              <span>Strategic planning · Hong Kong</span>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">Case 04 / Northern Metropolis</p>
+              <h3>San Tin Technopole Baseline Review</h3>
+              <p class="case-intro">從產業、跨境協同、人才社群與碳中和出發，建立創科新城的策略規劃基礎。</p>
+              <dl>
+                <div><dt>Scale</dt><dd>515-hectare strategic planning study</dd></div>
+                <div><dt>Methods</dt><dd>Baseline review · Spatial strategy · Scenario planning</dd></div>
+              </dl>
+              <button class="text-button panel-button" type="button" data-pdf="assets/projects/pdfs/san-tin-technopole-baseline-review.pdf" data-title="San Tin Technopole Baseline Review">View planning report <span>↗</span></button>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="focus" class="section focus-section">
-        <div class="section-kicker">
-          <p class="eyebrow">Focus Areas</p>
-          <h2>專注範疇</h2>
+      <section id="profile" class="section profile-section">
+        <div class="profile-intro">
+          <p class="kicker">02 · Profile</p>
+          <h2>Research rigour.<br>Design sensitivity.<br>Public purpose.</h2>
+          <img src="assets/profile-photo.jpg" alt="林圳豪 Hudson Lam 個人照片">
         </div>
-        <div class="focus-grid">
-          <article>
-            <img class="focus-card-icon" src="assets/generated/focus-icons/network.jpg" alt="">
-            <h3>香港城市研究</h3>
-            <p>以社區尺度、空間網絡、消費模式與政策影響為切入點，理解城市生活如何被制度、交通與公共設施塑造。</p>
-          </article>
-          <article>
-            <img class="focus-card-icon" src="assets/generated/focus-icons/public-space.jpg" alt="">
-            <h3>社區更新</h3>
-            <p>關注居民日常、公共空間與社會連結，將設計從形式美學推進到可討論、可落地、可維護的社區方案。</p>
-          </article>
-          <article>
-            <img class="focus-card-icon" src="assets/generated/focus-icons/housing.jpg" alt="">
-            <h3>公共住房</h3>
-            <p>結合香港公共住房網絡、生活服務與空間公平議題，探索居住環境與社會福祉之間的關係。</p>
-          </article>
-          <article>
-            <img class="focus-card-icon" src="assets/generated/focus-icons/urban-form.jpg" alt="">
-            <h3>城市設計</h3>
-            <p>整合土地使用、交通、公共界面、開放空間與城市形態，在多尺度條件下建立清晰的空間策略。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="work" class="section work-section">
-        <div class="section-kicker">
-          <p class="eyebrow">Selected Work</p>
-          <h2>從城市設計到學術研究</h2>
-          <p class="section-note">項目內容以課程 Studio、競賽獲獎作品、研究報告與本科作品集節選為主。點擊「查看水印 Panel」可在頁面內開啟 PDF preview；卡片圖片可左右滑動查看更多頁面。</p>
-          <a class="inline-button inline-button-talk" href="#contact" aria-label="聯繫我 Contact me">
-            <span>聯繫我</span>
-            <small>Contact me</small>
-          </a>
-        </div>
-
-        <div class="featured-project">
-          <div class="featured-media" aria-label="Dubai Oasis Renaissance video preview">
-            <video controls preload="metadata" poster="assets/projects/dubai-oasis-video-poster.jpg" data-video-src="assets/projects/dubai-oasis-video.mp4">
-              <source src="assets/projects/dubai-oasis-video.mp4" type="video/mp4">
-              <p>你的瀏覽器暫不支援影片播放。請聯繫我查看 Dubai Studio 影片。</p>
-            </video>
-            <span class="video-note">Dubai Studio video preview</span>
-          </div>
-          <div class="featured-copy">
-            <p class="tag">MUD Dubai Studio</p>
-            <h3>Oasis Renaissance</h3>
-            <p>以 Dubai Creek Harbor 為基地，回應沙漠城市的水文韌性、公共生活與文化身份議題。方案透過 blue-green network、氣候調適走廊、濱水公共界面與智慧治理節點，將高密度開發轉化為更具韌性與可達性的城市片區。</p>
-            <p>這個項目展示我在大尺度城市設計中的整合能力：從區域水系、交通組織、開放空間，到街區尺度的公共體驗與設計語言。</p>
-            <div class="project-links">
-              <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/dubai-oasis-panel-preview.pdf" data-title="Oasis Renaissance · Dubai Creek Harbor">查看水印 Panel</button>
-              <a href="#contact">Discuss this project</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-category">
-          <div class="category-heading">
-            <p class="eyebrow">Studio & Competition Panels</p>
-            <h3>以橫向卡片瀏覽課程 Studio 與競賽作品</h3>
-          </div>
-          <div class="project-strip" aria-label="Studio and competition works">
-            <article class="project-card project-card-video">
-              <div class="card-video">
-                <video controls preload="metadata" poster="assets/projects/chak-on-wellbeing.jpg">
-                  <source src="assets/projects/chak-on-wellbeing-video.mp4" type="video/mp4">
-                  <p>你的瀏覽器暫不支援影片播放。</p>
-                </video>
-              </div>
-              <div class="project-copy">
-                <div class="tag-row">
-                  <p class="tag">Champion</p>
-                  <p class="tag">HKHA</p>
-                </div>
-                <h3>Well-being Chak On</h3>
-                <p>回應老化立面、低使用率與模糊導向，透過模組家具、活動平台與社區事件重新激活公共空間。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/wellbeing-chak-on-panel-preview.pdf" data-title="Well-being Chak On · Community Renewal">查看水印 Panel</button>
-              </div>
+        <div class="profile-detail">
+          <p class="profile-lede">我關注城市空間網絡與政策如何塑造日常生活，並以規劃研究和設計把複雜問題轉化為可行動的策略。</p>
+          <div class="timeline">
+            <article>
+              <time>2026 — Present</time>
+              <div><h3>Urban Planning Assistant · Local Think Tank</h3><p>Northern Metropolis restructuring strategy and technical planning work.</p></div>
             </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/projects/previews/hung-hom-hydrophilic-01.jpg" alt="Hydrophilic Destination panel preview 1">
-                  <img src="assets/projects/previews/hung-hom-hydrophilic-02.jpg" alt="Hydrophilic Destination panel preview 2">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">Hung Hom Waterfront</p>
-                <h3>Hydrophilic Destination</h3>
-                <p>將紅磡濱水塑造成 connected, vibrant and engaging 的公共目的地，連結文化記憶、步行體驗與親水活動。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/hung-hom-hydrophilic-panel-preview.pdf" data-title="Hydrophilic Destination · Hung Hom Waterfront">查看水印 Panel</button>
-              </div>
+            <article>
+              <time>2026 — Present</time>
+              <div><h3>Student Research Assistant · HKU DUPAD</h3><p>Public housing accessibility networks and transport-policy co-benefits.</p></div>
             </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/projects/previews/harbourpulse-uli2025-01.jpg" alt="HarbourPulse panel preview 1">
-                  <img src="assets/projects/previews/harbourpulse-uli2025-02.jpg" alt="HarbourPulse panel preview 2">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">ULI 2025</p>
-                <h3>HarbourPulse</h3>
-                <p>Kai Tak 健康未來城市提案，結合居住、創新產業、體育旅遊、健康服務與濱水公共空間。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/harbourpulse-uli2025-panel-preview.pdf" data-title="HarbourPulse · ULI 2025">查看水印 Panel</button>
-              </div>
+            <article>
+              <time>2025 — 2027</time>
+              <div><h3>MSc Urban Planning · HKU</h3><p>Current student; HKIP and RTPI student member.</p></div>
             </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/projects/previews/uli2026-digital-art-01.jpg" alt="ULI 2026 panel preview 1">
-                  <img src="assets/projects/previews/uli2026-digital-art-02.jpg" alt="ULI 2026 panel preview 2">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">ULI 2026</p>
-                <h3>Co-create Digital Art Community</h3>
-                <p>將上海濱水工業邊緣更新為 digital art、IP co-creation、公共住房與混合用途共存的城市片區。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/uli2026-digital-art-panel-preview.pdf" data-title="Co-create Digital Art Community · ULI 2026">查看水印 Panel</button>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/projects/previews/road-safety-town-01.jpg" alt="Road Safety Town panel preview 1">
-                  <img src="assets/projects/previews/road-safety-town-02.jpg" alt="Road Safety Town panel preview 2">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">Merit Award</p>
-                <h3>Road Safety Town Renovation</h3>
-                <p>以跨代安全教育、彈性空間、透明平台與親子互動，更新 Sau Mau Ping Road Safety Town。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/road-safety-town-panel-preview.pdf" data-title="Road Safety Town Renovation">查看水印 Panel</button>
-              </div>
+            <article>
+              <time>2024 — 2025</time>
+              <div><h3>Master of Urban Design · HKU</h3><p>Graduated with Distinction.</p></div>
             </article>
           </div>
-        </div>
-
-        <div class="project-category">
-          <div class="category-heading">
-            <p class="eyebrow">Research & Planning Reports</p>
-            <h3>以學術研究與策略報告回應城市政策、交通與發展議題</h3>
-          </div>
-          <div class="project-strip compact" aria-label="Research and planning reports">
-            <article class="project-card">
-              <img src="assets/projects/madrid-lez-title.jpg" alt="Madrid Low Emission Zone research title page">
-              <div class="project-copy">
-                <p class="tag">Cities · IF 6.6</p>
-                <h3>Madrid LEZ Co-benefits</h3>
-                <p>以 Difference-in-Difference 研究低排放區對行人安全與城市活力的共同效益，連結政策評估與城市生活。</p>
-                <a class="panel-button peer-review-link" href="https://www.sciencedirect.com/journal/cities" target="_blank" rel="noopener">Under Peer Review</a>
-              </div>
-            </article>
-
-            <article class="project-card research-card">
-              <img src="assets/projects/frontiers-housing-title.jpg" alt="Hong Kong Intra-Public Housing Accessibility Network research title page">
-              <div class="project-copy">
-                <p class="tag">Frontiers in Built Environment · IF 2.7</p>
-                <h3>Hong Kong Intra-Public Housing Accessibility Network</h3>
-                <p>研究香港公共住房網絡與交通政策共同效益，連結建成環境、公共服務與城市生活品質。</p>
-                <a class="panel-button peer-review-link" href="https://www.frontiersin.org/journals/built-environment" target="_blank" rel="noopener">Under Peer Review</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/projects/san-tin-technopole-cover.jpg" alt="San Tin Technopole baseline review report cover">
-              <div class="project-copy">
-                <p class="tag">Studio Planning Report</p>
-                <h3>San Tin Technopole Baseline Review</h3>
-                <p>圍繞 Northern Metropolis、I&T 發展、區域協同、人才社群與碳中和，建立策略規劃基礎。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/san-tin-technopole-baseline-review.pdf" data-title="San Tin Technopole Baseline Review">查看 PDF</button>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="project-category">
-          <div class="category-heading">
-            <p class="eyebrow">Undergraduate Portfolio Excerpts</p>
-            <h3>本科作品集節選：以四個項目濃縮呈現早期訓練</h3>
-          </div>
-          <div class="project-strip compact" aria-label="Undergraduate portfolio projects">
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/bengup-pages/page-03.jpg" alt="BEngUP Tangjia renewal page 1">
-                  <img src="assets/bengup-pages/page-04.jpg" alt="BEngUP Tangjia renewal page 2">
-                  <img src="assets/bengup-pages/page-05.jpg" alt="BEngUP Tangjia renewal page 3">
-                  <img src="assets/bengup-pages/page-06.jpg" alt="BEngUP Tangjia renewal page 4">
-                  <img src="assets/bengup-pages/page-07.jpg" alt="BEngUP Tangjia renewal page 5">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">BEngUP · Heritage Renewal</p>
-                <h3>Renewal & Expansion of Tangjia</h3>
-                <p>以歷史街區更新、空間縫合與公共活動導入為核心，探索舊城肌理中的新公共性。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-tangjia-renewal-preview.pdf" data-title="BEngUP · Renewal & Expansion of Tangjia">查看水印節選</button>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/bengup-pages/page-08.jpg" alt="BEngUP urban interior page 1">
-                  <img src="assets/bengup-pages/page-09.jpg" alt="BEngUP urban interior page 2">
-                  <img src="assets/bengup-pages/page-10.jpg" alt="BEngUP urban interior page 3">
-                  <img src="assets/bengup-pages/page-11.jpg" alt="BEngUP urban interior page 4">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">BEngUP · Urban Observation</p>
-                <h3>Urban Interior & Verticality</h3>
-                <p>從城市內部空間、垂直化界面與居住日常出發，分析高密度城市中的生活場景。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-urban-interior-preview.pdf" data-title="BEngUP · Urban Interior & Verticality">查看水印節選</button>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/bengup-pages/page-12.jpg" alt="BEngUP community project page 1">
-                  <img src="assets/bengup-pages/page-13.jpg" alt="BEngUP community project page 2">
-                  <img src="assets/bengup-pages/page-14.jpg" alt="BEngUP community project page 3">
-                  <img src="assets/bengup-pages/page-15.jpg" alt="BEngUP community project page 4">
-                  <img src="assets/bengup-pages/page-16.jpg" alt="BEngUP community project page 5">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">BEngUP · Community Housing</p>
-                <h3>Vertical Community Design</h3>
-                <p>以共享空間、居住單元與社區活動為線索，回應高密度社區中的公共生活與鄰里連結。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-vertical-community-preview.pdf" data-title="BEngUP · Vertical Community Design">查看水印節選</button>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="card-carousel" data-carousel>
-                <div class="carousel-track">
-                  <img src="assets/bengup-pages/page-17.jpg" alt="BEngUP urban renewal strategy page 1">
-                  <img src="assets/bengup-pages/page-18.jpg" alt="BEngUP urban renewal strategy page 2">
-                  <img src="assets/bengup-pages/page-19.jpg" alt="BEngUP urban renewal strategy page 3">
-                  <img src="assets/bengup-pages/page-20.jpg" alt="BEngUP other works page">
-                </div>
-                <button class="carousel-control prev" type="button" aria-label="上一張">‹</button>
-                <button class="carousel-control next" type="button" aria-label="下一張">›</button>
-              </div>
-              <div class="project-copy">
-                <p class="tag">BEngUP · Urban Renewal</p>
-                <h3>Urban Renewal Strategy & Other Works</h3>
-                <p>整理城市更新策略、街區設計與建築尺度作品，呈現本科階段由規劃到設計的綜合訓練。</p>
-                <button class="panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-urban-renewal-strategy-preview.pdf" data-title="BEngUP · Urban Renewal Strategy & Other Works">查看水印節選</button>
-              </div>
-            </article>
+          <div class="capabilities">
+            <span>Spatial analysis</span><span>Policy evaluation</span><span>Urban design</span>
+            <span>Strategic planning</span><span>Community engagement</span><span>Technical drawing</span>
           </div>
         </div>
       </section>
 
-      <div class="panel-modal" id="panel-modal" aria-hidden="true">
-        <div class="panel-dialog" role="dialog" aria-modal="true" aria-labelledby="panel-title">
-          <div class="panel-header">
-            <h2 id="panel-title">Portfolio Preview</h2>
-            <button class="panel-close" type="button" aria-label="關閉 PDF preview">×</button>
-          </div>
-          <iframe class="panel-frame" title="Watermarked portfolio PDF preview"></iframe>
+      <section id="archive" class="section archive-section">
+        <div class="section-heading">
+          <div><p class="kicker">03 · Project archive</p><h2>More work across scales.</h2></div>
+          <p>由濱水公共空間、競賽提案到本科城市設計訓練。</p>
         </div>
-      </div>
-
-      <section id="updates" class="section updates-section">
-        <div class="section-kicker">
-          <p class="eyebrow">Updates & Recognition</p>
-          <h2>近期動態與重要認可</h2>
-        </div>
-        <div class="updates-list">
-          <article>
-            <p>Academic</p>
-            <h3>Master of Urban Design, HKU</h3>
-            <span>Pass with Distinction</span>
-          </article>
-          <article>
-            <p>Award</p>
-            <h3>Well-being Chak On</h3>
-            <span>Champion, community renewal competition</span>
-          </article>
-          <article>
-            <p>Research</p>
-            <h3>Madrid LEZ Co-benefits</h3>
-            <span>Pedestrian safety and urban vitality paper under review</span>
-          </article>
-          <article>
-            <p>Affiliation</p>
-            <h3>HKIP / HKIUD / RTPI</h3>
-            <span>Student / Graduate membership</span>
-          </article>
+        <div class="archive-grid">
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/hung-hom-hydrophilic-panel-preview.pdf" data-title="Hydrophilic Destination">
+            <img src="assets/projects/hung-hom-hydrophilic.jpg" alt=""><span>Hung Hom waterfront</span><strong>Hydrophilic Destination</strong>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/harbourpulse-uli2025-panel-preview.pdf" data-title="HarbourPulse">
+            <img src="assets/projects/harbourpulse-uli2025.jpg" alt=""><span>ULI 2025</span><strong>HarbourPulse</strong>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/uli2026-digital-art-panel-preview.pdf" data-title="Co-create Digital Art Community">
+            <img src="assets/projects/urbanist-uli2026.jpg" alt=""><span>ULI 2026</span><strong>Digital Art Community</strong>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/road-safety-town-panel-preview.pdf" data-title="Road Safety Town Renovation">
+            <img src="assets/projects/road-safety-town.jpg" alt=""><span>Merit award</span><strong>Road Safety Town</strong>
+          </button>
         </div>
       </section>
 
-      <section id="cats" class="section cats-section">
-        <div class="cats-copy">
-          <p class="eyebrow">Community Commitment</p>
-          <h2>貓協與長期志願實踐</h2>
-          <p>
-            在重慶大學期間，我創立並擔任 Meow Society - Stray Cat Care Association 會長，組織校園流浪動物照護、救助、領養與倡議工作。這段經歷不只是課外活動，也是我理解社群組織、公共溝通與日常照護倫理的重要起點。
-          </p>
-          <p>
-            城市規劃不只關於宏大的空間藍圖，也關於誰被看見、誰被照顧，以及一個社群如何建立持續行動的能力。這份經驗塑造了我對「有溫度的專業」的理解。
-          </p>
-          <div class="cats-ip-panel" aria-label="貓協 IP 動態插圖">
-            <img src="assets/cats/meow-ip-loop.gif" alt="貓協 IP 動態插圖">
-          </div>
-          <ul class="volunteer-list" aria-label="其他志願者活動">
-            <li>Peer Impact Network (HKU CEDARS) | Peer supporter</li>
-            <li>City Gallery Student Ambassador Scheme | Student ambassador</li>
-            <li>HKU DUPAD Student Ambassador | Workshop assistant / tour guide</li>
-            <li>Participatory Planning Volunteers | HKIP promotion booth assistant</li>
-            <li>Children from Low-income Families Voluntary Teaching Programme | English teacher for ADHD students group</li>
-            <li>WuZhiQiao (Bridge to China) Team | Strategic & promotion team member for rural revitalization</li>
-          </ul>
-        </div>
-        <div class="photo-wall" aria-label="志願活動照片牆">
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" data-confirm-label="貓協微信文章">
-            <img src="assets/volunteer-activities/meow-society-adoption-board.jpg" alt="貓協領養資訊展示板">
-            <figcaption>領養資訊板</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" data-confirm-label="貓協微信文章">
-            <img src="assets/volunteer-activities/meow-society-cat-portrait.jpg" alt="貓協照護的校園貓">
-            <figcaption>貓協照護日常</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" data-confirm-label="貓協微信文章">
-            <img src="assets/volunteer-activities/meow-society-children-donation.jpg" alt="貓協捐贈貧困兒童物資活動">
-            <figcaption>貓協兒童捐贈</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/volunteer-activities/teaching-sticker-rewards.jpg" alt="義教活動貼紙獎勵">
-            <figcaption>義教貼紙獎勵</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" data-confirm-label="貓協微信文章">
-            <img src="assets/volunteer-activities/meow-society-sharing-session.jpg" alt="貓協分享活動現場">
-            <figcaption>貓協分享活動</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" data-confirm-label="無止橋微信文章">
-            <img src="assets/volunteer-activities/bridge-to-china-team-photo.jpg" alt="無止橋團隊合照">
-            <figcaption>無止橋團隊</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" data-confirm-label="無止橋微信文章">
-            <img src="assets/volunteer-activities/bridge-to-china-promo-video.jpg" alt="無止橋基金會介紹片">
-            <figcaption>鄉建宣傳片</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" data-confirm-label="無止橋微信文章">
-            <img src="assets/volunteer-activities/bridge-to-china-xiaohongshu.jpg" alt="無止橋小紅書入駐畫面">
-            <figcaption>無止橋新媒體</figcaption>
-          </figure>
-          <figure class="photo-wall-link" tabindex="0" role="link" data-confirm-url="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" data-confirm-label="貓協微信文章">
-            <img src="assets/volunteer-activities/meow-society-team-building.jpg" alt="貓協團隊團建合照">
-            <figcaption>貓協團隊團建</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/volunteer-activities/rtpi-student-representatives-meeting.jpg" alt="MUD 與 MUP 學生代表參與 RTPI 會議">
-            <figcaption>RTPI學生會議</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/volunteer-activities/peer-impact-network-daily.jpg" alt="朋輩影響力網絡日常活動">
-            <figcaption>朋輩網絡日常</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section">
+      <section class="section community-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>期待城市規劃、城市設計與研究相關機會</h2>
-          <p>Open to Urban Planner / Urban Designer / Urban Manager opportunities in Hong Kong.</p>
+          <p class="kicker">04 · Beyond planning</p>
+          <h2>Leadership begins with care.</h2>
+          <p>在重慶大學期間，我創立並領導 Meow Society，組織校園流浪動物照護、救助、領養與倡議。這段經驗讓我相信，城市工作的尺度再大，最終仍關乎誰被看見、誰被照顧。</p>
         </div>
+        <div class="community-images">
+          <img src="assets/volunteer-activities/meow-society-sharing-session.jpg" alt="Meow Society 分享活動">
+          <img src="assets/volunteer-activities/bridge-to-china-team-photo.jpg" alt="無止橋團隊合照">
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <p class="kicker">Available for opportunities in Hong Kong</p>
+        <h2>Let’s shape better cities together.</h2>
+        <p>Open to Urban Planner, Urban Designer, Urban Manager, and research opportunities.</p>
         <div class="contact-actions">
-          <button class="button primary copy-button" type="button" data-copy="u3643063@connect.hku.hk">u3643063@connect.hku.hk</button>
-          <button class="button secondary copy-button" type="button" data-copy="+852 5543 3611">+852 5543 3611</button>
-          <a class="text-link" href="https://www.linkedin.com/in/chun-ho-lam-899811304/">LinkedIn</a>
+          <a class="button button-light" href="mailto:u3643063@connect.hku.hk">Email Hudson</a>
+          <a class="button button-outline" href="https://www.linkedin.com/in/chun-ho-lam-899811304/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button button-outline" href="assets/documents/hudson-lam-cv.pdf" download>Download CV</a>
         </div>
-        <div class="copy-toast" role="status" aria-live="polite">Copied!</div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div>
-        <p>© 2026 林圳豪 LAM Chun Ho (Hudson)</p>
-        <p>HKU MUP Student / MUD Graduate · Hong Kong</p>
+    <footer><span>© 2026 Hudson Lam</span><span>Planning with evidence · Designing for people</span></footer>
+
+    <div class="panel-modal" id="panel-modal" aria-hidden="true">
+      <div class="panel-dialog" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+        <div class="panel-header"><h2 id="panel-title">Portfolio preview</h2><button class="panel-close" type="button" aria-label="關閉預覽">×</button></div>
+        <iframe class="panel-frame" title="Portfolio PDF preview"></iframe>
       </div>
-    </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

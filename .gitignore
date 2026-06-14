@@ -1,0 +1,10 @@
+# Local previews and generated artifacts
+output/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.vscode/
+.idea/
