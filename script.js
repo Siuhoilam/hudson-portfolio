@@ -14,6 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const archiveTrack = document.querySelector("[data-archive-track]");
+  const archivePrevious = document.querySelector(".archive-control.prev");
+  const archiveNext = document.querySelector(".archive-control.next");
+
+  const scrollArchive = (direction) => {
+    if (!archiveTrack) return;
+    const card = archiveTrack.querySelector(".archive-card");
+    const distance = card ? card.getBoundingClientRect().width + 16 : archiveTrack.clientWidth * 0.8;
+    archiveTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
+  };
+
+  archivePrevious?.addEventListener("click", () => scrollArchive(-1));
+  archiveNext?.addEventListener("click", () => scrollArchive(1));
+  archiveTrack?.addEventListener("wheel", (event) => {
+    if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    archiveTrack.scrollLeft += event.deltaY;
+  }, { passive: false });
+
   const modal = document.querySelector("#panel-modal");
   const frame = modal?.querySelector(".panel-frame");
   const title = modal?.querySelector("#panel-title");

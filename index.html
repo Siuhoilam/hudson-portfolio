@@ -66,7 +66,10 @@
         <div class="case-list">
           <article class="case case-featured">
             <div class="case-media">
-              <img src="assets/projects/dubai-oasis.jpg" alt="Oasis Renaissance 城市設計總圖">
+              <video controls preload="metadata" poster="assets/projects/dubai-oasis.jpg">
+                <source src="assets/projects/dubai-oasis-video.mp4" type="video/mp4">
+                <p>你的瀏覽器暫不支援影片播放。</p>
+              </video>
               <span>Urban design · Dubai</span>
             </div>
             <div class="case-copy">
@@ -84,7 +87,10 @@
 
           <article class="case">
             <div class="case-media">
-              <img src="assets/projects/chak-on-wellbeing.jpg" alt="Well-being Chak On 社區更新設計">
+              <video controls preload="metadata" poster="assets/projects/chak-on-wellbeing.jpg">
+                <source src="assets/projects/chak-on-wellbeing-video.mp4" type="video/mp4">
+                <p>你的瀏覽器暫不支援影片播放。</p>
+              </video>
               <span>Champion · HKHA</span>
             </div>
             <div class="case-copy">
@@ -113,6 +119,7 @@
                 <div><dt>Outcome</dt><dd>Manuscript under peer review at <em>Cities</em></dd></div>
               </dl>
               <a class="text-button" href="https://www.sciencedirect.com/journal/cities" target="_blank" rel="noopener">Research context <span>↗</span></a>
+              <small class="research-status">Current manuscript status: <strong>Review Finalized</strong>. This link opens the <em>Cities</em> journal homepage; the article is not yet published.</small>
             </div>
           </article>
 
@@ -143,22 +150,55 @@
         </div>
         <div class="profile-detail">
           <p class="profile-lede">我關注城市空間網絡與政策如何塑造日常生活，並以規劃研究和設計把複雜問題轉化為可行動的策略。</p>
+          <p class="subheading">Work experience</p>
           <div class="timeline">
             <article>
-              <time>2026 — Present</time>
-              <div><h3>Urban Planning Assistant · Local Think Tank</h3><p>Northern Metropolis restructuring strategy and technical planning work.</p></div>
+              <time>04/2026 — Present</time>
+              <div>
+                <h3>Doctoral Exchange (Local Think Tank)</h3>
+                <p class="role-line">Part-time Urban Planning Assistant</p>
+                <p>Assist Northern Metropolis reconstruction planning and technical drawing production.</p>
+              </div>
             </article>
             <article>
-              <time>2026 — Present</time>
-              <div><h3>Student Research Assistant · HKU DUPAD</h3><p>Public housing accessibility networks and transport-policy co-benefits.</p></div>
+              <time>05/2026 — Present</time>
+              <div>
+                <h3>The University of Hong Kong, Department of Urban Planning and Design</h3>
+                <p class="role-line">Student Research Assistant</p>
+                <p>Conducted research on Hong Kong public housing networks and the co-benefits of transport policies; two Q1 journal manuscripts under peer review.</p>
+              </div>
             </article>
             <article>
-              <time>2025 — 2027</time>
-              <div><h3>MSc Urban Planning · HKU</h3><p>Current student; HKIP and RTPI student member.</p></div>
+              <time>06/2024 — 08/2025</time>
+              <div>
+                <h3>Architecture Commons</h3>
+                <p class="role-line">Architectural Design Intern</p>
+                <p>Led the “Well-being in Chak On” community renewal plan design, collaborating with HKHA toward implementation.</p>
+              </div>
             </article>
             <article>
-              <time>2024 — 2025</time>
-              <div><h3>Master of Urban Design · HKU</h3><p>Graduated with Distinction.</p></div>
+              <time>12/2024 — 01/2025</time>
+              <div>
+                <h3>China Innovation Development Research Institute</h3>
+                <p class="role-line">Urban Planning Assistant</p>
+                <p>Conducted Northern Metropolis planning research, site investigations, and concept design development.</p>
+              </div>
+            </article>
+            <article>
+              <time>07/2024 — 08/2024</time>
+              <div>
+                <h3>China State Construction International Medical Industry Development Co., Ltd</h3>
+                <p class="role-line">Architectural Engineering Assistant</p>
+                <p>Organized 4,000+ design drawings for Prince of Wales Hospital Phase II and compiled Kai Tak hospital construction reports.</p>
+              </div>
+            </article>
+            <article>
+              <time>10/2023 — 12/2023</time>
+              <div>
+                <h3>Shenzhen Branch, China Academy of Urban Planning &amp; Design</h3>
+                <p class="role-line">Urban Planning Intern</p>
+                <p>Created industrial planning maps, analyzed building environments, and produced 3D models and CAD drawings for land-use planning.</p>
+              </div>
             </article>
           </div>
           <div class="capabilities">
@@ -171,33 +211,73 @@
       <section id="archive" class="section archive-section">
         <div class="section-heading">
           <div><p class="kicker">03 · Project archive</p><h2>More work across scales.</h2></div>
-          <p>由濱水公共空間、競賽提案到本科城市設計訓練。</p>
+          <p>由濱水公共空間、研究項目到本科城市設計訓練。左右滾動瀏覽，點擊卡片查看完整項目。</p>
         </div>
-        <div class="archive-grid">
+        <div class="archive-toolbar">
+          <p><span aria-hidden="true">↔</span> Scroll to explore all 9 projects</p>
+          <div>
+            <button class="archive-control prev" type="button" aria-label="向左瀏覽項目">←</button>
+            <button class="archive-control next" type="button" aria-label="向右瀏覽項目">→</button>
+          </div>
+        </div>
+        <div class="archive-track" data-archive-track tabindex="0" aria-label="非精選項目橫向畫廊">
           <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/hung-hom-hydrophilic-panel-preview.pdf" data-title="Hydrophilic Destination">
-            <img src="assets/projects/hung-hom-hydrophilic.jpg" alt=""><span>Hung Hom waterfront</span><strong>Hydrophilic Destination</strong>
+            <img loading="lazy" src="assets/projects/hung-hom-hydrophilic.jpg" alt="Hydrophilic Destination 濱水設計"><span>Hung Hom waterfront</span><strong>Hydrophilic Destination</strong><small>Click to view full project ↗</small>
           </button>
           <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/harbourpulse-uli2025-panel-preview.pdf" data-title="HarbourPulse">
-            <img src="assets/projects/harbourpulse-uli2025.jpg" alt=""><span>ULI 2025</span><strong>HarbourPulse</strong>
+            <img loading="lazy" src="assets/projects/harbourpulse-uli2025.jpg" alt="HarbourPulse 城市提案"><span>ULI 2025</span><strong>HarbourPulse</strong><small>Click to view full project ↗</small>
           </button>
           <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/uli2026-digital-art-panel-preview.pdf" data-title="Co-create Digital Art Community">
-            <img src="assets/projects/urbanist-uli2026.jpg" alt=""><span>ULI 2026</span><strong>Digital Art Community</strong>
+            <img loading="lazy" src="assets/projects/urbanist-uli2026.jpg" alt="Digital Art Community 城市提案"><span>ULI 2026</span><strong>Digital Art Community</strong><small>Click to view full project ↗</small>
           </button>
           <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/road-safety-town-panel-preview.pdf" data-title="Road Safety Town Renovation">
-            <img src="assets/projects/road-safety-town.jpg" alt=""><span>Merit award</span><strong>Road Safety Town</strong>
+            <img loading="lazy" src="assets/projects/road-safety-town.jpg" alt="Road Safety Town 更新設計"><span>Merit award</span><strong>Road Safety Town</strong><small>Click to view full project ↗</small>
+          </button>
+          <a class="archive-card" href="https://www.frontiersin.org/journals/built-environment" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/projects/frontiers-housing-title.jpg" alt="香港公共住房可達性網絡研究"><span>Research · Under peer review</span><strong>Public Housing Accessibility Network</strong><small>Open research context ↗</small>
+          </a>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-tangjia-renewal-preview.pdf" data-title="Renewal & Expansion of Tangjia">
+            <img loading="lazy" src="assets/bengup-pages/page-03.jpg" alt="Tangjia 歷史街區更新"><span>BEngUP · Heritage renewal</span><strong>Renewal &amp; Expansion of Tangjia</strong><small>Click to view full project ↗</small>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-urban-interior-preview.pdf" data-title="Urban Interior & Verticality">
+            <img loading="lazy" src="assets/bengup-pages/page-08.jpg" alt="Urban Interior and Verticality"><span>BEngUP · Urban observation</span><strong>Urban Interior &amp; Verticality</strong><small>Click to view full project ↗</small>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-vertical-community-preview.pdf" data-title="Vertical Community Design">
+            <img loading="lazy" src="assets/bengup-pages/page-12.jpg" alt="Vertical Community Design"><span>BEngUP · Community housing</span><strong>Vertical Community Design</strong><small>Click to view full project ↗</small>
+          </button>
+          <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/bengup-urban-renewal-strategy-preview.pdf" data-title="Urban Renewal Strategy & Other Works">
+            <img loading="lazy" src="assets/bengup-pages/page-17.jpg" alt="Urban Renewal Strategy"><span>BEngUP · Urban renewal</span><strong>Urban Renewal Strategy</strong><small>Click to view full project ↗</small>
           </button>
         </div>
       </section>
 
       <section class="section community-section">
-        <div>
+        <div class="community-copy">
           <p class="kicker">04 · Beyond planning</p>
           <h2>Leadership begins with care.</h2>
-          <p>在重慶大學期間，我創立並領導 Meow Society，組織校園流浪動物照護、救助、領養與倡議。這段經驗讓我相信，城市工作的尺度再大，最終仍關乎誰被看見、誰被照顧。</p>
+          <p>在重慶大學期間，我創立並擔任 Meow Society — Stray Cat Care Association 會長，組織校園流浪動物照護、救助、領養與倡議工作。這段經驗不只是課外活動，也是我理解社群組織、公共溝通與日常照護倫理的重要起點。</p>
+          <p>城市規劃不只關乎宏大的空間藍圖，也關乎誰被看見、誰被照顧，以及一個社群如何建立持續行動的能力。</p>
+          <ul class="volunteer-list" aria-label="其他志願活動">
+            <li>Peer Impact Network (HKU CEDARS) · Peer supporter</li>
+            <li>City Gallery Student Ambassador Scheme · Student ambassador</li>
+            <li>HKU DUPAD Student Ambassador · Workshop assistant / tour guide</li>
+            <li>Participatory Planning Volunteers · HKIP promotion booth assistant</li>
+            <li>Children from Low-income Families Voluntary Teaching Programme · English teacher for ADHD student group</li>
+            <li>WuZhiQiao (Bridge to China) Team · Strategy and promotion team member</li>
+          </ul>
         </div>
-        <div class="community-images">
-          <img src="assets/volunteer-activities/meow-society-sharing-session.jpg" alt="Meow Society 分享活動">
-          <img src="assets/volunteer-activities/bridge-to-china-team-photo.jpg" alt="無止橋團隊合照">
+        <div class="photo-wall" aria-label="志願活動照片牆">
+          <a href="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/meow-society-adoption-board.jpg" alt="貓協領養資訊展示板"><figcaption>領養資訊板</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/meow-society-cat-portrait.jpg" alt="貓協照護的校園貓"><figcaption>貓協照護日常</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/meow-society-children-donation.jpg" alt="貓協捐贈兒童物資活動"><figcaption>兒童物資捐贈</figcaption></figure></a>
+          <figure><img loading="lazy" src="assets/volunteer-activities/teaching-sticker-rewards.jpg" alt="義教活動貼紙獎勵"><figcaption>義教活動</figcaption></figure>
+          <a href="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/meow-society-sharing-session.jpg" alt="貓協分享活動現場"><figcaption>貓協分享活動</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/bridge-to-china-team-photo.jpg" alt="無止橋團隊合照"><figcaption>無止橋團隊</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/bridge-to-china-promo-video.jpg" alt="無止橋基金會介紹片"><figcaption>鄉建宣傳片</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/fSTiPb3-SYp7bxokX7prNg" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/bridge-to-china-xiaohongshu.jpg" alt="無止橋小紅書入駐畫面"><figcaption>無止橋新媒體</figcaption></figure></a>
+          <a href="https://mp.weixin.qq.com/s/c8shXci5Md16whPQ8ktfxQ" target="_blank" rel="noopener"><figure><img loading="lazy" src="assets/volunteer-activities/meow-society-team-building.jpg" alt="貓協團隊團建合照"><figcaption>貓協團隊團建</figcaption></figure></a>
+          <figure><img loading="lazy" src="assets/volunteer-activities/rtpi-student-representatives-meeting.jpg" alt="學生代表參與 RTPI 會議"><figcaption>RTPI 學生會議</figcaption></figure>
+          <figure><img loading="lazy" src="assets/volunteer-activities/peer-impact-network-daily.jpg" alt="朋輩影響力網絡日常活動"><figcaption>朋輩網絡日常</figcaption></figure>
         </div>
       </section>
 
