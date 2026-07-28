@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="林圳豪 Hudson Lam 的城市規劃、空間分析與政策研究作品集。">
-    <meta name="theme-color" content="#0b2f2b">
+    <meta name="theme-color" content="#0b4f9c">
     <title>Hudson Lam | Urban Planning & Research</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -42,6 +43,23 @@
             <span>HKU MUP ’27</span>
             <span>MUD with Distinction</span>
             <span>Open to opportunities</span>
+          </div>
+        </div>
+        <div class="hero-companion" data-companion>
+          <button class="hero-companion-trigger" type="button" aria-expanded="false" aria-controls="companion-note" aria-label="Open Hudson's welcome note">
+            <span class="hero-companion-stage" aria-hidden="true">
+              <img class="hero-companion-pose hero-companion-idle" src="assets/hudson-companion-idle.webp" alt="">
+              <img class="hero-companion-pose pose--wave" src="assets/hudson-companion-wave-pose.webp" alt="">
+              <img class="hero-companion-pose pose--glasses" src="assets/hudson-companion-glasses-pose.webp" alt="">
+              <img class="hero-companion-pose pose--map" src="assets/hudson-companion-map-pose.webp" alt="">
+              <img class="hero-companion-pose pose--magnifier" src="assets/hudson-companion-magnifier-pose.webp" alt="">
+              <span class="hero-companion-fx"><i></i><i></i><i></i></span>
+            </span>
+          </button>
+          <div class="hero-companion-note" id="companion-note" aria-hidden="true">
+            <p>Hello, welcome in.</p>
+            <span>Let’s look at the city from another angle.</span>
+            <a href="#work">Explore the work <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <p class="hero-index" aria-hidden="true">22.3193° N<br>114.1694° E</p>
@@ -363,14 +381,24 @@
       </section>
 
       <section id="contact" class="contact-section">
-        <p class="kicker">Available for opportunities in Hong Kong</p>
-        <h2>Let’s shape better cities together.</h2>
-        <p>Open to Urban Planner, Urban Designer, Urban Manager, and research opportunities.</p>
-        <div class="contact-actions">
-          <a class="button button-light" href="mailto:u3643063@connect.hku.hk">Email Hudson</a>
-          <a class="button button-outline" href="https://wa.me/85255433611" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="button button-outline" href="https://www.linkedin.com/in/chun-ho-lam-899811304/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="button button-outline" href="assets/documents/hudson-lam-cv.pdf" download>Download CV</a>
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <p class="kicker">Available for opportunities in Hong Kong</p>
+            <h2>Let’s shape better cities together.</h2>
+            <p>Open to Urban Planner, Urban Designer, Urban Manager, and research opportunities.</p>
+            <div class="contact-actions">
+              <a class="button button-light" href="mailto:u3643063@connect.hku.hk">Email Hudson</a>
+              <a class="button button-outline" href="https://wa.me/85255433611" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="button button-outline" href="https://www.linkedin.com/in/chun-ho-lam-899811304/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="button button-outline" href="assets/documents/hudson-lam-cv.pdf" download>Download CV</a>
+            </div>
+          </div>
+          <div class="contact-companion" data-contact-companion aria-hidden="true">
+            <span class="contact-companion-note">See you around the city.</span>
+            <img class="contact-companion-idle" src="assets/hudson-companion-idle.webp" alt="">
+            <img class="contact-companion-wave" src="assets/hudson-companion-wave-pose.webp" alt="">
+            <i></i><i></i><i></i>
+          </div>
         </div>
       </section>
     </main>

@@ -1,5 +1,6 @@
 # Local previews and generated artifacts
 output/
+.playwright-cli/
 
 # OS and editor files
 .DS_Store
