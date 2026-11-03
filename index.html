@@ -8,23 +8,27 @@
     <title>Hudson Lam | Urban Planning & Research</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ui.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">跳至主要內容</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首頁">
         <span class="brand-mark">HL</span>
         <span><strong>Hudson Lam</strong><small>Urban planner & researcher</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟導覽"><img src="assets/icons/menu.svg" alt="" aria-hidden="true"></button>
       <nav id="site-nav" class="nav" aria-label="主要導覽">
-        <a href="#work">Selected work</a>
-        <a href="#profile">Profile</a>
-        <a href="#archive">Archive</a>
-        <a class="nav-cta" href="#contact">Let’s talk</a>
+        <a href="#work">項目 <span>Work</span></a>
+        <a href="#profile">關於 <span>Profile</span></a>
+        <a href="#guidance">師承 <span>Guidance</span></a>
+        <a href="#archive">作品庫 <span>Archive</span></a>
+        <a href="#community">其他 <span>Beyond</span></a>
+        <a class="nav-cta" href="#contact">聯絡 <span>Contact</span></a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero">
         <div class="hero-image" aria-hidden="true"></div>
         <div class="hero-grid" aria-hidden="true"></div>
@@ -72,7 +76,8 @@
         <article><strong>3 institutes</strong><span>HKIP · HKIUD · RTPI</span></article>
       </section>
 
-      <section id="work" class="section">
+      <section id="work" class="section" data-nav-section>
+        <span id="main-content" tabindex="-1"></span>
         <div class="section-heading">
           <div>
             <p class="kicker">01 · Selected work</p>
@@ -158,7 +163,7 @@
         </div>
       </section>
 
-      <section id="profile" class="section profile-section">
+      <section id="profile" class="section profile-section" data-nav-section>
         <div class="profile-intro">
           <p class="kicker">02 · Profile</p>
           <h2>Research rigour.<br>Design sensitivity.<br>Public purpose.</h2>
@@ -224,7 +229,7 @@
         </div>
       </section>
 
-      <section id="guidance" class="section guidance-section">
+      <section id="guidance" class="section guidance-section" data-nav-section>
         <div class="guidance-compact-head">
           <div>
             <p class="kicker">03 · Academic &amp; Professional Guidance</p>
@@ -307,17 +312,34 @@
         </div>
       </section>
 
-      <section id="archive" class="section archive-section">
+      <section id="archive" class="section archive-section" data-nav-section>
         <div class="section-heading">
           <div><p class="kicker">04 · Project archive</p><h2>More work across scales.</h2></div>
-          <p>由濱水公共空間、研究項目到本科城市設計訓練。左右滾動瀏覽，點擊卡片查看完整項目。</p>
+          <p>濱水公共空間、競賽提案、學術研究，以及本科階段的城市設計訓練。</p>
+        </div>
+        <div class="archive-filters" hidden>
+          <div class="filter-group" role="group" aria-label="項目類型">
+            <button type="button" data-filter="all" aria-pressed="true">全部 <span>9</span></button>
+            <button type="button" data-filter="design" aria-pressed="false">設計 <span>4</span></button>
+            <button type="button" data-filter="research" aria-pressed="false">研究 <span>1</span></button>
+            <button type="button" data-filter="undergraduate" aria-pressed="false">本科 <span>4</span></button>
+          </div>
+          <div class="archive-search">
+            <label for="archive-query">搜尋項目 <span>Search</span></label>
+            <input id="archive-query" type="search" placeholder="名稱、地點或主題" autocomplete="off" aria-describedby="archive-results">
+          </div>
         </div>
         <div class="archive-toolbar">
-          <p><span aria-hidden="true">↔</span> Scroll to explore all 9 projects</p>
+          <p id="archive-results" role="status" aria-live="polite">9 個項目</p>
           <div>
             <button class="archive-control prev" type="button" aria-label="向左瀏覽項目">←</button>
             <button class="archive-control next" type="button" aria-label="向右瀏覽項目">→</button>
           </div>
+        </div>
+        <div class="archive-empty" hidden>
+          <h3>暫時沒有符合的項目</h3>
+          <p>試試其他關鍵字，或返回全部作品。</p>
+          <button type="button" class="text-button" data-reset-filters>重設篩選</button>
         </div>
         <div class="archive-track" data-archive-track tabindex="0" aria-label="非精選項目橫向畫廊">
           <button class="archive-card panel-button" type="button" data-pdf="assets/projects/pdfs/hung-hom-hydrophilic-panel-preview.pdf" data-title="Hydrophilic Destination">
@@ -350,7 +372,7 @@
         </div>
       </section>
 
-      <section class="section community-section">
+      <section id="community" class="section community-section" data-nav-section>
         <div class="community-copy">
           <p class="kicker">05 · Beyond planning</p>
           <h2>Leadership begins with care.</h2>
@@ -380,18 +402,20 @@
         </div>
       </section>
 
-      <section id="contact" class="contact-section">
+      <section id="contact" class="contact-section" data-nav-section>
         <div class="contact-layout">
           <div class="contact-copy">
             <p class="kicker">Available for opportunities in Hong Kong</p>
             <h2>Let’s shape better cities together.</h2>
             <p>Open to Urban Planner, Urban Designer, Urban Manager, and research opportunities.</p>
             <div class="contact-actions">
-              <a class="button button-light" href="mailto:u3643063@connect.hku.hk">Email Hudson</a>
+              <button class="button button-light copy-contact" type="button" data-copy="u3643063@connect.hku.hk"><img src="assets/icons/copy.svg" alt="" aria-hidden="true">u3643063@connect.hku.hk</button>
+              <button class="button button-outline copy-contact" type="button" data-copy="+852 5543 3611"><img src="assets/icons/copy.svg" alt="" aria-hidden="true">+852 5543 3611</button>
               <a class="button button-outline" href="https://wa.me/85255433611" target="_blank" rel="noopener">WhatsApp</a>
               <a class="button button-outline" href="https://www.linkedin.com/in/chun-ho-lam-899811304/" target="_blank" rel="noopener">LinkedIn</a>
               <a class="button button-outline" href="assets/documents/hudson-lam-cv.pdf" download>Download CV</a>
             </div>
+            <p class="contact-copy-hint">點擊電郵或電話即可複製。</p>
           </div>
           <div class="contact-companion" data-contact-companion aria-hidden="true">
             <span class="contact-companion-note">See you around the city.</span>
@@ -405,12 +429,20 @@
 
     <footer><span>© 2026 Hudson Lam</span><span>Planning with evidence · Designing for people</span></footer>
 
-    <div class="panel-modal" id="panel-modal" aria-hidden="true">
-      <div class="panel-dialog" role="dialog" aria-modal="true" aria-labelledby="panel-title">
-        <div class="panel-header"><h2 id="panel-title">Portfolio preview</h2><button class="panel-close" type="button" aria-label="關閉預覽">×</button></div>
-        <iframe class="panel-frame" title="Portfolio PDF preview"></iframe>
+    <dialog class="document-dialog" id="panel-modal" aria-labelledby="panel-title">
+      <div class="document-header">
+        <nav class="document-breadcrumb" aria-label="目前位置"><span>Portfolio</span><span aria-current="page" id="panel-title">作品預覽</span></nav>
+        <div class="document-actions">
+          <a class="document-open icon-button" target="_blank" rel="noopener" aria-label="另開 PDF"><img src="assets/icons/external-link.svg" alt="" aria-hidden="true"></a>
+          <button class="panel-close icon-button" type="button" aria-label="關閉預覽"><img src="assets/icons/x.svg" alt="" aria-hidden="true"></button>
+        </div>
       </div>
-    </div>
+      <div class="document-loading" role="status">正在載入作品文件…</div>
+      <iframe class="panel-frame" title="Portfolio PDF preview"></iframe>
+      <p class="document-fallback">無法顯示文件？<a class="document-open" target="_blank" rel="noopener">另開 PDF</a></p>
+    </dialog>
+    <div class="ui-toast" role="status" aria-live="polite" aria-atomic="true"></div>
     <script src="script.js"></script>
+    <script src="ui.js"></script>
   </body>
 </html>
